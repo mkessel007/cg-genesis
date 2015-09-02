@@ -1,16 +1,10 @@
-# Genesis Sample Theme
+# ClickGiant Base Child Theme for Genesis
 
-Github project link: https://github.com/copyblogger/genesis-sample
+Github project link: https://github.com/jonrivers/cg-genesis
 
 
 ## Installation Instructions
 
-1. Upload the Genesis Sample theme folder via FTP to your wp-content/themes/ directory. (The Genesis parent theme needs to be in the wp-content/themes/ directory as well.)
-2. Go to your WordPress dashboard and select Appearance.
-3. Activate the Genesis Sample theme.
-4. Inside your WordPress dashboard, go to Genesis > Theme Settings and configure them to your liking.
-
-
-## Theme Support
-
-Please visit http://my.studiopress.com/help/ for theme support.
+1. Load critical styles first (base_dev.css is just the Genesis default stylesheet)
+2. Add theme styles as normal (using styles.php)
+3. Plays nicely and made to streamline Wordpress performance optimizations with with https://github.com/jonrivers/cg-soil
