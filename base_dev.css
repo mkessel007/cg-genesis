@@ -95,7 +95,8 @@ input[type="search"] {
 .site-footer:before,
 .site-header:before,
 .site-inner:before,
-.wrap:before {
+.wrap:before,
+.section:before {
 	content: " ";
 	display: table;
 }
@@ -112,7 +113,8 @@ input[type="search"] {
 .site-footer:after,
 .site-header:after,
 .site-inner:after,
-.wrap:after {
+.wrap:after,
+.section:after {
 	clear: both;
 	content: " ";
 	display: table;

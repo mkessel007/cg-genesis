@@ -2,12 +2,16 @@
 /**
  * This file adds the homepage to the ClickGiant Base
  *
- * @author Jon Rivers
- * @package ClickGiant Genesis Base
+ * @author StudioPress
+ * @package Enterprise Pro
  * @subpackage Customizations
  */
 
-//* Add widget support for homepage. If no widgets active, display the default loop.
+/**
+ * Add home widget support
+ *
+ */
+
 add_action( 'genesis_meta', 'cg_genesis_home_meta' );
 function cg_genesis_home_meta() {
 
@@ -40,22 +44,13 @@ function cg_genesis_home_widgets() {
 		'after'  => '</div></section>',
 	) );
 
-	if (is_mobile() ) { 
-	
-		return; 
-
-	}
-
-	else {
-
 	genesis_widget_area( 'home-shortcuts', array(
 		'before' => '<section id="home-shortcuts" class="home widget-area"><div class="wrap">',
 		'after'  => '</div></section>',
 	) );
 
-	}
-	
 }
+
 
 /**
 * Uncomment to activate mobble features
@@ -70,6 +65,9 @@ function cg_genesis_home_widgets() {
 */
 
 
-//* Load Genesis Framework
+/**
+ * Load Genesis Framework
+ *
+ */
 
 genesis();
