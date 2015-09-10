@@ -27,7 +27,7 @@ add_action( 'init', 'cg_genesis_base_style_sheet', 1 );
 function cg_genesis_base_style_sheet() {
 
 	if ( !is_admin() ) {
-		wp_enqueue_style( 'base-css', get_stylesheet_directory_uri() . '/base_dev.css', PARENT_THEME_VERSION );
+		wp_enqueue_style( 'base-css', get_stylesheet_directory_uri() . '/base-dev.css', PARENT_THEME_VERSION );
 	}
 }
 
