@@ -22,15 +22,6 @@ add_theme_support('soil-disable-asset-versioning');
 //* DEFINE GOOGLE ANALYTICS
 add_theme_support('soil-google-analytics', 'UA-XXXXX-Y');
 
-//* REPRIORITIZE CRITICAL STYLES
-add_action( 'init', 'cg_genesis_base_style_sheet', 1 );
-function cg_genesis_base_style_sheet() {
-
-	if ( !is_admin() ) {
-		wp_enqueue_style( 'base-css', get_stylesheet_directory_uri() . '/base-dev.css', PARENT_THEME_VERSION );
-	}
-}
-
 //* ENQUEUE FONTS
 add_action( 'wp_enqueue_scripts', 'cg_genesis_child_styles' );
 function cg_genesis_child_styles() {
@@ -42,7 +33,6 @@ function cg_genesis_child_styles() {
 add_action( 'wp_enqueue_scripts', 'cg_genesis_responsive_menu' );
 function cg_genesis_responsive_menu() {
 
-	wp_enqueue_script( 'responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
-	wp_enqueue_style( 'dashicons' );
+	wp_enqueue_script( 'responsive-menu', get_stylesheet_directory_uri() . '/assets/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
 
 }
